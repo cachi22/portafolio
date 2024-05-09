@@ -1,0 +1,321 @@
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo);
+    font-family: "Roboto Slab", serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+    font-family: "Quicksand", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Sección Menu */
+section.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f0f7ff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu__list {
+    display: flex;
+}
+
+.menu__list__item {
+    margin-right: 20px;
+}
+
+/* Sección Title */
+section.title {
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f7ff;
+}
+
+.title__bio {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.title__subsection {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.title__network {
+    display: flex;
+    justify-content: center;
+}
+
+.title__network__item {
+    margin: 0 10px;
+}
+
+.title__profile{
+    width: 60%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+    opacity:0.5 ;
+}
+
+
+/* Estilo para todas las secciones excepto la primera */
+section:not(:first-child) {
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección About */
+section.about {
+    padding: 20px;
+    background-color: #f0f7ff;
+}
+
+.about__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.about__paragraph {
+    margin-bottom: 20px;
+}
+
+/* seccion skills */
+section.skills {
+    padding: 20px;
+    background-color: #f0f7ff;
+}
+
+.skills__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.skills__line{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+/* Sección Hobbies */
+section.hobbies {
+    padding: 20px;
+    background-color: #f0f7ff;
+}
+
+.hobbies__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.hobbies__line{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+/* Sección Formación Académica */
+.card {
+    align-items: center;
+    display: inline-block;
+    width: 300px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+.img__formacion {
+    align-items: center;
+    text-align: center;
+    width: 100px;
+    border-radius: 5px 5px 0 0;
+}
+
+
+/* Sección Experiencia Profesional */
+/* Estilo para la sección de experiencia */
+.experience {
+
+    padding: 20px;
+    background-color: #f0f7ff;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* Centramos todo el contenido en vertical y horizontalmente */
+    align-items: stretch;
+
+}
+
+/* Estilo para el título de la sección de experiencia */
+.experience__section__title {
+    font-weight: bold;
+    color: rgb(9,  9, 9);
+    margin-bottom: 10px;
+    font-size: 24px;
+
+}
+
+
+
+/* Estilo para cada card de experiencia */
+.experience__box {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 300ms ease-in-out;
+}
+
+/* Imagen de cada card de experiencia */
+.experience__img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+    object-fit: cover;
+}
+
+/* Contenedor de información de cada card de experiencia */
+.experience__info {
+    padding: 16px;
+    text-align: left;
+}
+
+/* Estilo para el título de cada card de experiencia */
+.experience__title {
+    font-size: 18px;
+    line-height: 1.2;
+    color: #3d3d3d;
+    margin-bottom: 8px / 16 * 9;
+}
+
+
+
+/* Estilo para el texto de cada card de experiencia */
+.experience__text {
+    font-size: 14px;
+    line-height: 1.45;
+    color: #7f8c8d;
+    opacity: 0.8;
+}
+
+/* Agregar sombra a las imágenes cuando se pasa el mouse por encima */
+.experience__img:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+
+
+/* Estilo para los botones de cada card de experiencia */
+.experience__button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+
+/* Sección Contacto */
+section.formcontato {
+    padding: 20px;
+    background-color: #f0f7ff;
+}
+
+.formcontato__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.formcontato__subtext {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.formcontato__form {
+    margin-top: 20px;
+}
+
+.formcontato__input,
+.formcontato__textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.formcontato__botao {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Sección Footer */
+section.footer {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+/* Media query para pantallas pequeñas */
+@media only screen and (max-width: 768px) {
+    section.title {
+        padding: 10px;
+    }
+
+    .title__profile {
+        width: 50%;
+    }
+
+    section.about,
+    section.skills,
+    section.hobbies,
+    section.formcontato {
+        padding: 10px;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+/* Media query para pantallas muy pequeñas, como smartphones en modo horizontal */
+@media only screen and (max-width: 480px) {
+    .title__profile {
+        width: 80%;
+    }
+}
